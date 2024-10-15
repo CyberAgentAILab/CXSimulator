@@ -1,0 +1,24 @@
+{
+  "{\"actionType\":\"Click a campaign page\",\"pageTitle\":null,\"pagePath\":null,\"productName\":[\"Enjoy 1 month Free of YouTube Premium for Youtube related Product\"]}": {
+    "data": [
+      {
+        "embedding": [
+          0.3516419529914856, 0.11321350932121277, -0.19812364876270294,
+          0.15811887383460999, 0.1934230774641037, -0.2854340672492981,
+          -0.023427795618772507, 0.15851891040802002, -0.015339330770075321,
+          0.1866222769021988, 0.45005372166633606, -0.500859797000885,
+          -0.0966615378856659, -0.038129549473524094, 0.29423511028289795,
+          0.2624313235282898
+        ],
+        "index": 0,
+        "object": "embedding"
+      }
+    ],
+    "model": "text-embedding-3-small",
+    "object": "list",
+    "usage": {
+      "prompt_tokens": 33,
+      "total_tokens": 33
+    }
+  }
+}
