@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "CXSimulator"
+version = "0.1.0"
+description = "CXSimulator"
+authors = ["akira kasuga <kasuga_akira@cyberagent.co.jp>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{ include = "cxsim", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+rich = "^13.7.1"
+networkx = "^3.3"
+openai = "^1.14.1"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+lightgbm = "^4.3.0"
+scikit-learn = "^1.4.1"
+imbalanced-learn = "^0.12.2"
+google-cloud-bigquery = "^3.20.1"
+db_dtypes = "^1.2.0"
+python-dotenv = "^1.0.1"
+taskipy = "^1.13.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+ruff = "^0.4.5"
+
+[tool.taskipy.tasks]
+model_using_cache = "poetry run python -m cxsim --stage model --log-level rich --use-cache"
+simulation_using_cache = "poetry run python -m cxsim --stage simulation --log-level rich --use-cache --campaign-title 'Enjoy 1 month Free of YouTube Premium for Youtube related Product' --use-embed-cache"
+model = "poetry run python -m cxsim --stage model --log-level rich"
+simulation = "poetry run python -m cxsim --stage simulation --log-level rich --use-cache"
+simulation_for_new = "poetry run python -m cxsim --stage simulation --log-level rich"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
