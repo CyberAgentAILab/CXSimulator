@@ -2,7 +2,7 @@
 <h1>CXSimulator: A User Behavior Simulation using LLM Embeddings for Web-Marketing Campaign Assessment</h3>
 
 <p align="center">
-    <a href="https://jp.linkedin.com/in/akira-kasuga">Akira Kasuga</a> &nbsp;
+    <a href="https://sites.google.com/view/akira-kasuga/home">Akira Kasuga</a> &nbsp;
     <a href="https://yonetaniryo.github.io/">Ryo Yonetani</a> &nbsp;
 </p>
 
